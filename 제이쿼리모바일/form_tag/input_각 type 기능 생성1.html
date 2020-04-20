@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <title>제이쿼리 모바일</title>
+  <style>
+  </style>
+</head>
+<body>
+  <!-- 첫화면-->
+  <div data-role="page" id="page1">
+    <div data-role="header">
+      <h1>header 영역</h1>
+    </div>
+    <div data-role="content" >
+      <div data-role="fieldcontain">
+        <label for="txtarea1">도시설명</label>
+        <textarea id="txtarea1" cols="25" rows="5"></textarea>
+        <label for="score1">점수</label>
+        <input type="range" name="score" id="score1" value="50" min="0" max="100">
+        <label for="gender1">성별</label>
+        <select name="gender" id="gender1" data-role="slider">
+          <option value="male">남자</option>
+          <option value="female">여자</option>
+        </select>
+      </div>
+      <fieldset data-role="controlgroup">
+        <legend>학년</legend>
+        <input type="radio" name="syear" id="syear1" value="1">
+        <label for="syear1">1학년</label>
+        <input type="radio" name="syear" id="syear2" value="2">
+        <label for="syear2">2학년</label>
+        <input type="radio" name="syear" id="syear3" value="3">
+        <label for="syear3">3학년</label>
+        <input type="radio" name="syear" id="syear4" value="4">
+        <label for="syear4">4학년</label>
+      </fieldset>
+      <fieldset data-role="controlgroup" data-type="horizontal">
+        <legend>학기</legend>
+        <input type="radio" name="semester" id="semester1" value="1" checked="checked" >
+        <label for="semester1">1학기</label>
+        <input type="radio" name="semester" id="semester2" value="2">
+        <label for="semester2">2학기</label>
+      </fieldset>
+      <fieldset data-role="controlgroup">
+        <legend>연락매체<legend>
+          <label for="type1">e-mail</label>
+          <input type="checkbox" name="type1" id="type1" value="1">
+          <label for="type2">address</label>
+          <input type="checkbox" name="type2" id="type2" value="2">
+          <label for="type3">phone</label>
+          <input type="checkbox" name="type3" id="type3" value="3" checked="checked">
+          </fieldset>
+    </div>
+    <div data-role="footer" data-position="fixed">
+      <h4>footer영역</h4>
+    </div>
+        </div>
+ 
