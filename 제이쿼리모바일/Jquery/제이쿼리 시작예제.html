@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <title>제이쿼리</title>
+  <style>
+    body * {margin: 5px; padding:5px; border: solid thin gray;}
+    * {font-size: 18px; font-weight:bold;}
+  </style>
+  <script>
+  $(document).ready(function(){
+    msg1();
+    $('#id1').click(function(){
+      msg2();
+    });
+  });
+    
+    function msg1() {
+      alert('msg1():문서로드후 자동으로경고창을 표시합니다');
+    }
+    function msg2() {
+      $('#id2').css('background', 'silver');
+      $('#id2').text('msg():HTML문서 변경되었습니다.');
+    }
+  </script>
+</head>
+<body>
+ <button id="id1">선택하면 메시지를 변경합니다</button><br><br>
+  <div id="id2">메시지 : </div>
+</body>
+</html>
