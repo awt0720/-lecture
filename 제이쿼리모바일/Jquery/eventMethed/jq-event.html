@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<mate charset="utf-8">
+	<title>제이쿼리 모바일</title>
+</head>
+<style type="text/css">
+	body *{margin:5px; padding:5px; border: solid thin gray;}
+	div {width:20px; height: 20px; border: solid thick green;}
+	input {background-color:silver;}
+</style>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+
+	$(document).ready(function(){ 
+
+	 //focus/blur 이벤트
+	 $('input').focus( function(){
+	 	$(this).css ('background-color','orange');
+	 });
+	 $('input').blur( function(){
+	 	$(this).css ('background-color',"white");
+	 });
+
+	 //click 이벤트
+	 $('div').click( function(){
+	 	$(this).width($(this).width() *1.5);
+	 	$(this).height($(this).height() * 1.5);
+	 });
+
+	 //toggle 이벤트
+	 $('div').click (function (){
+	 	$('img').toggle(4000);
+	 });
+
+	 });
+</script>
+<body>
+focus/blur 이벤트 <br> <input type="text" name="text1" value="입력하세요">
+click 이벤트<div></div><br>
+toggle 이벤트<br> <img src="bgimg1.jpg">
+</body>
+</html>
