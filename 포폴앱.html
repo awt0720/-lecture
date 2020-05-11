@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <title>제이쿼리 모바일</title>
+  <style>
+    li { list-style:none;}
+    .picture { padding:0; margin:0;}
+    .picture li { float:left; width:50%;}
+    .picture li a { display:block; margin:5px;}
+    .picture li img {display:block; width:50%; height:auto;}
+    .picture li img:hover { display:block; width:100%; height:auto;}
+    #home {
+	background-color:black;
+	}
+  #home ul {margin-top:100px;)
+  </style>
+</head>
+<body>
+  <!-- 첫화면-->
+ <div data-theme="b">
+  <div data-role="page" id="home">
+    <div data-role="header" data-theme="b">
+      <h1>안원태 홈페이지</h1>
+    </div>
+    <div data-role="content" style="text-align:center">
+	<img src="1.jpg" style="width:100%;">
+      <ul data-role="listview" data-inset="true">
+       <li><a href="#intro">소개</a></li>
+       <li><a href="#pjt" data-rel="dialog">프로젝트</a></li>
+       <li><a href="#gallery">사진</a></li>
+      </ul>
+  </div>
+    <div data-role="footer" data-position="fixed" data-theme="b" style="text-align:center;">
+      <p>App 방문을 환영합니다</p>
+    </div>
+   </div>
+   
+   <!-- 소개페이지-->
+   <div data-role="page" id="intro" data-theme="b">
+     <div data-role="header" data-theme="b">
+       <a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+       <h1>저를 소개합니다</h1>
+     </div>
+     <div data-role="content">
+       <div style="text-align:center">
+         <img src="4.jpg" alt="내사진" style="width:100%; height:250px;">
+       </div>
+       <div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+         <div data-role="collapsible" data-collapsed="false">
+           <h3>성장과정</h3>
+           <p>어린 시절부터 <br>제가 하는 일에는 부모님께서 <br>항상 믿음을 주시고 격려를 해주셨기에 <br>오늘날의 제가 성장한 것 같습니다.<br><br>
+             그리고 이러한 가정환경은 <br>훗날 제가 성인이 되어서도 <br>자신의 일은 스스로 책임지고 <br>수행하는데 커다란 도움이 되고 있습니다.
+         </div>
+         <div data-role="collapsible">
+           <h3>학창시절</h3>
+           <p>
+             학창시절에는<br> 주말과 방학 기간을 이용해<br> 많은 아르바이트를 하면서<br>
+             스스로 돈을 벌어 짜임새 있게 쓴다는 기쁨이<br> 학습 의욕과 독립심으로 발전했습니다.<br>
+             <br>다양한 일을 하면서 사람들과의 친분 유지와 <br>활동적이고 적극적인 성격을 만드는데 큰 도움이 되었으며<br><br>
+             밴드부에서 단체생활을 하며<br> 음악과 함께 인연을 만나고 그 인연을 돈독히 하는 법을 배웠습니다.
+           </p>
+         </div>
+         <div data-role="collapsible">
+           <h3>사회경험</h3>
+           <p>
+              고등학교 재학중에는 <br>음식점에서 서빙을 하며 요리를 배웠고<br><br>
+              현대카드 영업직으로 일을시작하여 <br>
+              팬택서비스센터 핸드폰 수리를 하며<br> 차분함과 꼼꼼함을 배우며 <br><br>
+              건설현장에서 3년정도 다니며 <br>끈기과 성실함을 알게되었습니다.
+           </p>
+         </div>
+         <div data-role="collapsible">
+           <h3>경력</h3>
+            <p>2020.4.13 ~ 6. 뉴딜일자리 오픈소스 웹/앱 개발자 양성 및 취업지원과정<br><br>
+           </p>
+         </div>
+         <div data-role="collapsible">
+           <h3>자격증</h3>
+            <p>정보기기 운용 기능사 - 한국산업인력공단<br><br>
+           </p>
+         </div>
+       </div>
+<div data-role="footer" data-position="fixed" data-theme="b" style="text-align:center;">
+      <p>App 방문을 환영합니다</p>
+    </div>
+     </div>
+   </div>
+ 
+  
+   <!--프로젝트 페이지-->
+  <div data-role="page" id="pjt" data-theme="b">
+         <div data-role="header" data-position="fixed">
+           <h3>프로젝트</h3>
+         </div>
+          <div data-role="content">
+             <div id="pic">
+              <img src="2.jpg" style="width: 330px;">
+              <img src="3.jpg" style="width: 330px;">
+                   </div>
+               <ul>
+                 <li>홈페이지 제작</li>
+                 <li>2020.2</li>
+                 <li>Grid를 이용한 정렬과 <br>javascript API 이용하여 <br>From태그를 Post로<br> 이메일로 발송기능 구현</li>
+               </ul>
+         </div>
+       <div data-role="footer" data-theme="b">
+    </div>
+     </div>
+   <!--사진 페이지-->
+  <div data-role="page" id="gallery" data-theme="b">
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+      <h1>사진</h1>
+    </div>
+    <div data-role="content">
+	<ul class="picture" data-role="ui-grid-a">
+	  <li class="ui-block-a"><a href="5-1.jpg" rel="external"><img src="5-1.jpg" </a></li>
+	  <li class="ui-block-b"><a href="5-2.jpg" rel="external"><img src="5-2.jpg" </a></li>
+	  <li class="ui-block-a"><a href="5-3.jpg" rel="external"><img src="5-3.jpg" </a></li>
+	  <li class="ui-block-b"><a href="5-4.jpg" rel="external"><img src="5-4.jpg" </a></li>
+	</ul>
+  </div>
+    <div data-role="footer" data-position="fixed" data-theme="b" style="text-align:center;">
+      <p>App 방문을 환영합니다</p>
+    </div>
+   </div>
+
+</body>
+</html>
+
